@@ -88,11 +88,8 @@ export const App = () => {
                 )}
 
                 {shouldShowNoPosts && (
-                  <div
-                    className="notification is-warning"
-                    data-cy="NoPostsYet"
-                  >
-                      No posts yet
+                  <div className="notification is-warning" data-cy="NoPostsYet">
+                    No posts yet
                   </div>
                 )}
 
