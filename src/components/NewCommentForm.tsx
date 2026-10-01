@@ -52,7 +52,7 @@ export const NewCommentForm: React.FC<Props> = ({ postId, onSubmit }) => {
     }
 
     setIsLoading(true);
-    setHasSubmitError(false)
+    setHasSubmitError(false);
 
     onSubmit({
       postId,

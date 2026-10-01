@@ -21,7 +21,7 @@ export const PostDetails: React.FC<Props> = ({ postInfo }) => {
 
   useEffect(() => {
     setIsLoading(true);
-    setHasDeleteError(false)
+    setHasDeleteError(false);
     setHasCommentError(false);
     setIsFormVisible(false);
     setComments([]);
@@ -45,11 +45,10 @@ export const PostDetails: React.FC<Props> = ({ postInfo }) => {
       currentComments.filter(comment => comment.id !== commentId),
     );
 
-    deleteComment(commentId)
-      .catch(() => {
-        setComments(prevComments);
-        setHasDeleteError(true);
-      });
+    deleteComment(commentId).catch(() => {
+      setComments(prevComments);
+      setHasDeleteError(true);
+    });
   };
 
   return (
